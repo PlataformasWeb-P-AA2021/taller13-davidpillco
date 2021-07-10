@@ -24,7 +24,7 @@ def los_edificios():
 
 
 @app.route("/losdepartamentos")
-def los_departamentos_dos():
+def los_departamentos():
     """
     """
     r = requests.get("http://127.0.0.1:8000/api/departamentos/",
