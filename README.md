@@ -30,15 +30,15 @@ curl -iX GET -u user:pass http://127.0.0.1:8000/api/numerost/24/
 
 # GET
 import requests
-r = requests.get("http://127.0.0.1:8000/api/estudiantes/", auth=('user', 'passs'))
+r = requests.get("http://127.0.0.1:8000/api/estudiantes/", auth=('david', 'david'))
 r.content
 
 # POST
-r = requests.post('http://127.0.0.1:8000/api/numerost/', data = {'estudiante':'http://127.0.0.1:8000/api/estudiantes/12/', 'telefono':'99999999', 'tipo'='principal' }, auth=('user', 'pass'))
+r = requests.post('http://127.0.0.1:8000/api/numerost/', data = {'estudiante':'http://127.0.0.1:8000/api/estudiantes/12/', 'telefono':'99999999', 'tipo':'principal' }, auth=('david', 'david'))
 print(r)
 
 # PUT
-r = requests.put('http://127.0.0.1:8000/api/numerost/26', data = {'estudiante':'http://127.0.0.1:8000/api/estudiantes/13/', 'telefono':'99999999', 'tipo':'principal' }, auth=('user', 'pass'))
+r = requests.put('http://127.0.0.1:8000/api/numerost/19', data = {'estudiante':'http://127.0.0.1:8000/api/estudiantes/13/', 'telefono':'99999999', 'tipo':'principal' }, auth=('david', 'david'))
 print(r)
 
 # DELETE

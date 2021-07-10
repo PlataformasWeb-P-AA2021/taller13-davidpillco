@@ -1,0 +1,12 @@
+{% extends "master.html" %}
+
+{% block content %}
+<h2>Crear Edificio</h3>
+
+<form action="" method="post">
+  {% csrf_token %}
+  {{formulario.as_p}}
+  <p><input type='submit'class="btn btn-success" value='Agregar'/></p>
+</form>
+
+{% endblock %}
